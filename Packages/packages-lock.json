@@ -286,7 +286,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.picoxr": {
-      "version": "file:/Users/bytedance/Downloads/sdk",
+      "version": "https://github.com/Pico-Developer/PICO-Unity-Integration-SDK.git#3.2.0",
       "depth": 0,
       "source": "local",
       "dependencies": {
