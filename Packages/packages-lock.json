@@ -286,7 +286,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.picoxr": {
-      "version": ""C:\Users\sandr\Downloads\package.json"",
+      "version": "C:\Users\sandr\Downloads\package.json",
       "depth": 0,
       "source": "local",
       "dependencies": {
