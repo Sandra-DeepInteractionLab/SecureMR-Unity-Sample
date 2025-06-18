@@ -286,9 +286,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.picoxr": {
-      "version": "C:\Users\sandr\Downloads\package.json",
-      "depth": 0,
-      "source": "local",
+     "version": "https://github.com/Pico-Developer/PICO-Unity-Integration-SDK.git#3.2.0" ,
       "dependencies": {
         "com.unity.xr.management": "4.0.0",
         "com.unity.xr.interaction.toolkit": "2.0.0",
