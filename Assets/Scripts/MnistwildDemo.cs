@@ -138,14 +138,18 @@ namespace PicoXR.SecureMR.Demo
                 new float[] { 0, 0, cropWidth, 0, cropWidth, cropHeight });
             var affineMat = pipeline.CreateTensor<float, Matrix>(1, new TensorShape(new[] { 2, 3 }));
 
+
+
             // Create MNIST model and tensors
             var inputTensor = pipeline.CreateTensor<float, Matrix>(1, cropShape);
+            // two output tensors for predictions
             predClassWrite = pipeline.CreateTensorReference<int, Scalar>(1, new TensorShape(new[]{1}));
             predScoreWrite = pipeline.CreateTensorReference<float, Scalar>(1, new TensorShape(new[]{1}));
 
             CreateMnistModel(pipeline, inputTensor,predClassWrite, predScoreWrite);
-            
+
             // Create global tensors
+            // hold the results of the MNIST model to write to the renderer
             predClassGlobal = provider.CreateTensor<int, Scalar>(1, new TensorShape(new[] { 1 }));
             predScoreGlobal = provider.CreateTensor<float, Scalar>(1, new TensorShape(new[] { 1 }));
             cropRgbGlobal = provider.CreateTensor<byte, Matrix>(3, cropShape);
